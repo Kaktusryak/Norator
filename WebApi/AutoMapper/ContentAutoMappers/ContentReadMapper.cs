@@ -32,6 +32,7 @@ namespace WebApi.AutoMapper.ContentAutoMappers
                 Name = source.Name,
                 ReleaseDate = source.ReleaseDate,
                 ContentCategory = source.ContentCategory.Name,
+                NumberOfSubcibers = source.NumberOfSubscribers
             };
             contentReadViewModel.actorsViewModels = _actorListMapper.Map(source.Content_Actors);
             contentReadViewModel.genreViewModels = _genreListMapper.Map(source.Content_Genres);

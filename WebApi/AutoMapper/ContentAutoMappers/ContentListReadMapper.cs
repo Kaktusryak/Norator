@@ -27,7 +27,8 @@ namespace WebApi.AutoMapper.ContentAutoMappers
                 Id = content.Id,
                 Name = content.Name,
                 ReleaseDate = content.ReleaseDate,
-                ContentCategory = content.ContentCategory.Name
+                ContentCategory = content.ContentCategory.Name,
+                NumberOfSubscibers = content.NumberOfSubscribers
             };
         }
     }
